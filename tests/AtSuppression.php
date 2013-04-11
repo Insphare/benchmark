@@ -26,3 +26,4 @@ class AtSuppression extends Benchmark_Abstract {
 		}
 	}
 }
+

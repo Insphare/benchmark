@@ -40,7 +40,7 @@ class Autoloader {
 			return true;
 		}
 
-		throw new Exception('Class: "' . $className . '" can not found or exists.');
+		throw new Exception('Class: "' . $className . '" can not found or does not exists.');
 	}
 
 	/**

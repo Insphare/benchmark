@@ -17,7 +17,7 @@
 					{$tests}
 				</div>
 				<div class="input">
-					<input type="submit" value="Ausgewählte Tests durchführen" />
+					<input type="submit" value="Perform selected tests" />
 				</div>
 			</form>
 

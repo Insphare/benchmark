@@ -5,7 +5,23 @@
 
 h2 {
 	font-size: 14pt;
-	color: #db5f3a;
+	color: #db201c;
+}
+
+.textLeft {
+	text-align: left;
+	padding:4px;
+
+	background: #c8d7dc; /* Old browsers */
+	background: -moz-linear-gradient(top, #c8d7dc 0%, #e3eaed 63%, #f2f5f6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8d7dc), color-stop(63%,#e3eaed), color-stop(100%,#f2f5f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c8d7dc 0%,#e3eaed 63%,#f2f5f6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c8d7dc 0%,#e3eaed 63%,#f2f5f6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c8d7dc 0%,#e3eaed 63%,#f2f5f6 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c8d7dc 0%,#e3eaed 63%,#f2f5f6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d7dc', endColorstr='#f2f5f6',GradientType=0 ); /* IE6-9 */
+
+	border: 1px solid #9dacb1;
 }
 
 .headline {
@@ -28,6 +44,17 @@ h2 {
 	background: -ms-linear-gradient(top, #002400 0%,#005700 17%,#008a00 33%,#52b152 67%,#83c783 83%,#b4ddb4 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #002400 0%,#005700 17%,#008a00 33%,#52b152 67%,#83c783 83%,#b4ddb4 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#b4ddb4',GradientType=0 ); /* IE6-9 */
+}
+
+.win {
+	background: #abed49; /* Old browsers */
+	background: -moz-linear-gradient(top, #abed49 0%, #d8e8b2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#abed49), color-stop(100%,#d8e8b2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #abed49 0%,#d8e8b2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #abed49 0%,#d8e8b2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #abed49 0%,#d8e8b2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #abed49 0%,#d8e8b2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abed49', endColorstr='#d8e8b2',GradientType=0 ); /* IE6-9 */
 }
 
 table {
@@ -53,4 +80,9 @@ td {
 	background: -ms-linear-gradient(top, #596a72 0%,#cedce7 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #596a72 0%,#cedce7 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=0 ); /* IE6-9 */
+}
+
+.space, .space td {
+	border: 0;
+	height: 20px;
 }

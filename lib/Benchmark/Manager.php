@@ -86,7 +86,7 @@ class Benchmark_Manager {
 				error_reporting($beforeLevel);
 
 				$result['tests'][$loopInteractionCounter] = array(
-					'code'		=> $this->parseSource($class, $match[0]),
+					'code'		=> $this->parseSource($class, $match[0], $className),
 					'method'	=> $match[0],
 					'duration'	=> ($microTimeDuration),
 					'winner'	=> false,
@@ -111,16 +111,20 @@ class Benchmark_Manager {
 	/**
 	 * @param $file
 	 * @param $function
+	 * @param $className
 	 * @return bool|mixed
 	 */
-	private function parseSource($file, $function) {
+	private function parseSource($file, $function, $className) {
 		$source = file_get_contents($file);
-		$pattern = '/public function\s+'.$function.'\s*\([^\)]*\)\s*\{(.*?)\n\s+\}/msi';
-		if (preg_match($pattern, $source, $matches)) {
-			return highlight_string('<?php ' . $matches[1], true);
-		}
+		$lines = explode(PHP_EOL, $source);
 
-		return false;
+		$reflectionClass = new ReflectionClass($className);
+		$beginLine = $reflectionClass->getMethod($function)->getStartLine();
+		$endLine = $reflectionClass->getMethod($function)->getEndLine();
+		$sliced = array_slice($lines, $beginLine, $endLine - $beginLine-1, true);
+
+		$code = implode(PHP_EOL, $sliced);
+		return highlight_string('<?php' . PHP_EOL . $code, true);
 	}
 
 }

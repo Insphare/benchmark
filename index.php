@@ -61,10 +61,19 @@ foreach ($tests as $file => $data) {
 $htmlResult = '';
 
 if (count($result)) {
-	$htmlResult = '<h2>Messungen</h2>';
+	$htmlResult = '<h2>Measurement results</h2>';
 	$htmlResult .= '<table>';
 
+	$firstLoopPassed = false;
 	foreach ($result as $key => $testWhile) {
+		if (true === $firstLoopPassed) {
+			$htmlResult .= '<tr class="space"><td colspan="4">&nbsp;</td></tr>';
+		}
+
+		if (false === $firstLoopPassed) {
+			$firstLoopPassed = true;
+		}
+
 		$htmlResult .= '
 			<tr>
 				<th colspan="4" class="textLeft">
@@ -105,8 +114,8 @@ if (count($result)) {
 				</tr>
 			';
 		}
-		$htmlResult .= '</table>';
 	}
+	$htmlResult .= '</table>';
 }
 
 $testsHtml .= '</table>';

@@ -26,3 +26,4 @@ class Preincrement extends Benchmark_Abstract {
 		++$j;
 	}
 }
+

@@ -28,3 +28,4 @@ class IssetVsArrayKeyExists extends Benchmark_Abstract {
 		isset($this->array['bar']);
 	}
 }
+

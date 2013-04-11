@@ -1,20 +1,20 @@
 <?php
 
-class ModuloVsIf extends Benchmark_Abstract {
+class TernaryVsIf extends Benchmark_Abstract {
 
 	public function getShortDescription() {
-		return 'Modulo vs. if';
+		return 'Ternary vs. if';
 	}
 
 	public function getLongDescription() {
-		return 'Lazy modulo vs. if statement.';
+		return 'Lazy ternary vs. if statement.';
 	}
 
 	public function getLoops() {
 		return 100000;
 	}
 
-	public function test_modulo() {
+	public function test_ternary() {
 		$x = true;
 		$y = $x ? 'yes' : 'no';
 	}

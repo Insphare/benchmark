@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="headline">
-			Benchmark - Tester
+			PHP Benchmark
 		</div>
 		<div class="content">
 			<form action="/index.php" method="POST">

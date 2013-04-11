@@ -9,11 +9,11 @@ class IssetVsArrayKeyExists extends Benchmark_Abstract {
 	);
 
 	public function getShortDescription() {
-		return 'checking the existence of an array key with in_array and isset';
+		return 'Check array-key exists';
 	}
 
 	public function getLongDescription() {
-		return 'comparing the existence check speed between a numbered array vs. an array using the values as keys with isset';
+		return 'Comparing the existence check speed between a numbered array vs. an array using the values as keys with isset';
 	}
 
 	public function getLoops() {

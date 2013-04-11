@@ -77,7 +77,7 @@ if (count($result)) {
 		$htmlResult .= '
 			<tr>
 				<th colspan="4" class="textLeft">
-					('.$testWhile['meta']['short'].')&nbsp;'.$testWhile['meta']['long'].'
+					'.$testWhile['meta']['short'].'&nbsp;-&nbsp;'.$testWhile['meta']['long'].'
 				</th>
 			</tr>
 			<tr class="headTr">

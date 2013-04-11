@@ -5,11 +5,11 @@ class Modulo extends Benchmark_Abstract {
 	protected $integer = 45645465406;
 
 	public function getShortDescription() {
-		return 'Determining even/odd integers';
+		return 'Determining even/odd integers with modulo';
 	}
 
 	public function getLongDescription() {
-		return 'There are many ways to do it - some of them are very long';
+		return 'There are many ways to do it - some of them are very slow';
 	}
 
 	public function getLoops() {

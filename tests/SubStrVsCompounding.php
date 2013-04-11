@@ -9,7 +9,7 @@ class SubStrVsCompounding extends Benchmark_Abstract {
 	}
 
 	public function getLongDescription() {
-		return 'Tests runtime execution. For SubStr vs compouding for one char';
+		return 'SubStr vs compounding for one char';
 	}
 
 	public function getLoops() {

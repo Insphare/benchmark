@@ -29,3 +29,4 @@ class TernaryVsIf extends Benchmark_Abstract {
 		}
 	}
 }
+

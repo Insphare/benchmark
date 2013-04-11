@@ -8,7 +8,7 @@ class Benchmark_Manager {
 	private $testPath = null;
 
 	/**
-	 *
+	 * Constructor.
 	 */
 	public function __construct() {
 		$this->testPath = Registry::get(Registry::BASE_PATH) . 'tests' . DIRECTORY_SEPARATOR;

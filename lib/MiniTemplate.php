@@ -18,7 +18,7 @@ class MiniTemplate {
 	/**
 	 * @param $source
 	 * @throws RuntimeException
-	 * @return mixed|string
+	 * @return mixed | string
 	 */
 	public function fetch($source) {
 		$source = Registry::get(Registry::BASE_PATH) . 'view' . DIRECTORY_SEPARATOR . $source;

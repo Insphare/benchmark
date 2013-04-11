@@ -26,3 +26,4 @@ class SubStrVsCompounding extends Benchmark_Abstract {
 		substr($string, 4, 5);
 	}
 }
+

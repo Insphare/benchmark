@@ -26,3 +26,4 @@ class Modulo extends Benchmark_Abstract {
 		$modulo = $this->integer & 1;
 	}
 }
+

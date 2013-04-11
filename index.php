@@ -33,7 +33,7 @@ if (true === $isPostMode) {
 
 $testsHtml = '
 	<table>
-		<tr>
+		<tr class="headTr">
 			<td>&nbsp;</td>
 			<td>Short-Description</td>
 			<td>Long-Description</td>
@@ -58,6 +58,8 @@ foreach ($tests as $file => $data) {
 		';
 }
 
+$htmlResult = '';
+
 if (count($result)) {
 	$htmlResult = '<h2>Messungen</h2>';
 	$htmlResult .= '<table>';
@@ -69,7 +71,7 @@ if (count($result)) {
 					('.$testWhile['meta']['short'].')&nbsp;'.$testWhile['meta']['long'].'
 				</th>
 			</tr>
-			<tr class="head">
+			<tr class="headTr">
 				<td>
 					Code
 				</td>
@@ -77,7 +79,7 @@ if (count($result)) {
 					Method
 				</td>
 				<td>
-					Execution time by {$res.meta.loops|nf} loops
+					Execution time with '.number_format($testWhile['meta']['loops'], 0, ',', '.').' loops
 				</td>
 				<td>
 					Slower

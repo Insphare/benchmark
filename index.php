@@ -123,3 +123,4 @@ $template = new MiniTemplate();
 $template->assign('tests', $testsHtml);
 $template->assign('testsMeasure', $htmlResult);
 echo $template->fetch('xhtml.tpl');
+

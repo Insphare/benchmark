@@ -24,3 +24,4 @@ class Sha1Md5 extends Benchmark_Abstract {
 		md5(self::TEST_STRING);
 	}
 }
+

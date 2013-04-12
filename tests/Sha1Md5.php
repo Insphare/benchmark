@@ -16,11 +16,11 @@ class Sha1Md5 extends Benchmark_Abstract {
 		return 10000;
 	}
 
-	public function test_sha1() {
+	public function benchmark_sha1() {
 		sha1(self::TEST_STRING);
 	}
 
-	public function test_md5() {
+	public function benchmark_md5() {
 		md5(self::TEST_STRING);
 	}
 }

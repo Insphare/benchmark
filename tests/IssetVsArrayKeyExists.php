@@ -20,11 +20,11 @@ class IssetVsArrayKeyExists extends Benchmark_Abstract {
 		return 10000;
 	}
 
-	public function test_array_kex_exists() {
+	public function benchmark_array_kex_exists() {
 		array_key_exists('bar', $this->array);
 	}
 
-	public function test_isset() {
+	public function benchmark_isset() {
 		isset($this->array['bar']);
 	}
 }

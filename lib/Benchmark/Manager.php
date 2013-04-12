@@ -73,7 +73,7 @@ class Benchmark_Manager {
 		$measureTimes = array();
 		$loopInteractionCounter = 0;
 		foreach ($arrTestMethodNames as $testMethodName) {
-			if (preg_match('~^test_.*~i', $testMethodName->name, $match)) {
+			if (preg_match('~^benchmark_.*~i', $testMethodName->name, $match)) {
 				$beforeLevel = error_reporting(0);
 				$startMeasureTime = microtime(true);
 

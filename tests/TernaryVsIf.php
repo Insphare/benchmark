@@ -14,12 +14,12 @@ class TernaryVsIf extends Benchmark_Abstract {
 		return 100000;
 	}
 
-	public function test_ternary() {
+	public function benchmark_ternary() {
 		$x = true;
 		$y = $x ? 'yes' : 'no';
 	}
 
-	public function test_withoutSuppression() {
+	public function benchmark_withoutSuppression() {
 		$x = true;
 		if (true === $x) {
 			$y = 'yes';

@@ -14,13 +14,13 @@ class AtSuppression extends Benchmark_Abstract {
 		return 10000;
 	}
 
-	public function test_atSuppression() {
+	public function benchmark_atSuppression() {
 		for ($i = 0; $i < 50; ++$i) {
 			@parse_url('a');
 		}
 	}
 
-	public function test_withoutSuppression() {
+	public function benchmark_withoutSuppression() {
 		for ($i = 0; $i < 50; ++$i) {
 			parse_url('a');
 		}

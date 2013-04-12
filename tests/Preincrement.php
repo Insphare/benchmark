@@ -16,12 +16,12 @@ class Preincrement extends Benchmark_Abstract {
 		return 400000;
 	}
 
-	public function test_post() {
+	public function benchmark_post() {
 		$j = 0;
 		$j++;
 	}
 
-	public function test_pre() {
+	public function benchmark_pre() {
 		$j = 0;
 		++$j;
 	}

@@ -16,12 +16,12 @@ class SubStrVsCompounding extends Benchmark_Abstract {
 		return 10000;
 	}
 
-	public function test_compounding() {
+	public function benchmark_compounding() {
 		$string = self::TEST_STRING;
 		$string{5};
 	}
 
-	public function test_substring() {
+	public function benchmark_substring() {
 		$string = self::TEST_STRING;
 		substr($string, 4, 5);
 	}

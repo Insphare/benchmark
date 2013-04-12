@@ -5,7 +5,7 @@ class SubStrVsCompounding extends Benchmark_Abstract {
 	const TEST_STRING = 'testStringAllerStringsUndStringStringString';
 
 	public function getShortDescription() {
-		return 'Tests sub_str vs. compouding';
+		return 'Sub_str vs. compouding';
 	}
 
 	public function getLongDescription() {

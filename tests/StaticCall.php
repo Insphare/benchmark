@@ -9,7 +9,7 @@ class StaticCall extends Benchmark_Abstract {
 	}
 
 	public function getShortDescription() {
-		return 'Tests static function call vs. objects';
+		return 'Static function call vs. objects';
 	}
 
 	public function getLongDescription() {

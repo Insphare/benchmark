@@ -5,7 +5,7 @@ class Sha1Md5 extends Benchmark_Abstract {
 	const TEST_STRING = 'testString';
 
 	public function getShortDescription() {
-		return 'Tests sha1 vs md5';
+		return 'Sha1 vs md5';
 	}
 
 	public function getLongDescription() {

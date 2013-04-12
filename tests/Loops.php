@@ -9,7 +9,7 @@ class Loops extends Benchmark_Abstract {
 	}
 
 	public function getShortDescription() {
-		return 'Tests all loop variants.';
+		return 'Loop variants';
 	}
 
 	public function getLongDescription() {

@@ -1,6 +1,6 @@
 <?php
 
-class Preincrement extends Benchmark_Abstract {
+class Increment extends Benchmark_Abstract {
 
 	const TEST_STRING = 'testString';
 
@@ -16,12 +16,12 @@ class Preincrement extends Benchmark_Abstract {
 		return 400000;
 	}
 
-	public function benchmark_post() {
+	public function benchmark_post_increment() {
 		$j = 0;
 		$j++;
 	}
 
-	public function benchmark_pre() {
+	public function benchmark_pre_increment() {
 		$j = 0;
 		++$j;
 	}

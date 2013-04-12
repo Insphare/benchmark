@@ -9,7 +9,7 @@ class Sha1Md5 extends Benchmark_Abstract {
 	}
 
 	public function getLongDescription() {
-		return 'Which operation needs more time? Consider sha1-string is longer than md5.';
+		return 'Which operation needs more time? Be aware sha1-string contains more chars than md5.';
 	}
 
 	public function getLoops() {

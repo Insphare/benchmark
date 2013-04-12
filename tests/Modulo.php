@@ -16,10 +16,10 @@ class Modulo extends Benchmark_Abstract {
 		return 35000;
 	}
 
-	public function benchmark_integer() {
+	public function benchmark_is_int() {
 		$modulo = is_int($this->integer / 2);
 	}
-	public function benchmark_operator() {
+	public function benchmark_modulo() {
 		$modulo = $this->integer % 2;
 	}
 	public function benchmark_binary() {

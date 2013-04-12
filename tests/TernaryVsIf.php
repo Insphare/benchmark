@@ -19,7 +19,7 @@ class TernaryVsIf extends Benchmark_Abstract {
 		$y = $x ? 'yes' : 'no';
 	}
 
-	public function benchmark_withoutSuppression() {
+	public function benchmark_if() {
 		$x = true;
 		if (true === $x) {
 			$y = 'yes';

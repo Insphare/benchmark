@@ -58,6 +58,17 @@ h2 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abed49', endColorstr='#d8e8b2',GradientType=0 ); /* IE6-9 */
 }
 
+.loser {
+	background: #ff3019; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff3019 0%, #f28b79 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#f28b79)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff3019 0%,#f28b79 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff3019 0%,#f28b79 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff3019 0%,#f28b79 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ff3019 0%,#f28b79 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#f28b79',GradientType=0 ); /* IE6-9 */
+}
+
 table {
 	marigin-top: 5px;
 	width: 99%;

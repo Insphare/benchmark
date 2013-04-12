@@ -90,6 +90,7 @@ class Benchmark_Manager {
 					'method'	=> $match[0],
 					'duration'	=> ($microTimeDuration),
 					'winner'	=> false,
+					'loser'		=> false,
 				);
 				$measureTimes[$loopInteractionCounter] = $microTimeDuration;
 				++$loopInteractionCounter;
@@ -100,6 +101,7 @@ class Benchmark_Manager {
 		$bestTime = reset($measureTimes);
 		$index = array_keys($measureTimes);
 		$result['tests'][$index[0]]['winner'] = true;
+		$result['tests'][$index[count($index)-1]]['loser'] = true;
 
 		foreach ($result['tests'] as &$value) {
 			$value['slow'] = number_format(100 - ($bestTime / $value['duration'] * 100), 2, ',', '.');

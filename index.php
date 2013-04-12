@@ -98,7 +98,7 @@ if (count($result)) {
 
 		foreach ($testWhile['tests'] as $item) {
 			$htmlResult .= '
-				<tr '.($item['winner'] ? 'class="win"' : '').'>
+				<tr '.($item['winner'] ? 'class="win"' : '').' '.($item['loser'] ? 'class="loser"' : '').'>
 					<td>
 						'.($item['code']).'
 					</td>

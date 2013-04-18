@@ -75,14 +75,23 @@ class Benchmark_Manager {
 		foreach ($arrTestMethodNames as $testMethodName) {
 			if (preg_match('~^benchmark_.*~i', $testMethodName->name, $match)) {
 				$beforeLevel = error_reporting(0);
-				$startMeasureTime = microtime(true);
 
+				$avgTimes = array();
+				$avgLoops = 3;
 				$loops = $realClass->getLoops();
-				for ($i=0; $i < $loops; ++$i) {
-					$realClass->{$testMethodName->name}();
+				for ($avgIteration = 0; $avgIteration < $avgLoops; $avgIteration++) {
+					$startMeasureTime = microtime(true);
+					for ($i=0; $i < $loops; ++$i) {
+						$realClass->{$testMethodName->name}();
+					}
+					$avgTimes[] = (microtime(true)-$startMeasureTime);
 				}
 
-				$microTimeDuration = (microtime(true)-$startMeasureTime);
+				$microTimeDuration = 0;
+				foreach ($avgTimes as $duration) {
+					$microTimeDuration += $duration;
+				}
+				$microTimeDuration = $microTimeDuration / $avgLoops;
 				error_reporting($beforeLevel);
 
 				$result['tests'][$loopInteractionCounter] = array(
